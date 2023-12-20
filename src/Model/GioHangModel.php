@@ -20,7 +20,7 @@ class GioHangModel {
     }
     public function getAllGioHang($idkhachHang)
     {
-        $result = $this->mysqli->query("SELECT * FROM users_schema.giohangview where idkhachHang= $idkhachHang");
+        $result = $this->mysqli->query("SELECT * FROM giohangview where idkhachHang= $idkhachHang");
         return $result->fetch_all(MYSQLI_ASSOC);    // nhiều hàng
     }
     public function createGioHang($idkhachHang, $idhangHoa, $soLuongMua){

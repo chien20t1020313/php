@@ -40,7 +40,7 @@ class KhachHangModel {
         $result = $this->mysqli->query("SELECT
         SUM(soLuongMua) AS tongLuongMua
         FROM
-            users_schema.lichsuview
+            lichsuview
         WHERE
             YEAR(ngayMua) = '$nam'
         AND 
